@@ -1,0 +1,21 @@
+$color-array: (
+  red: #E65165,
+  green: #51E671,
+  blue: #51E671
+);
+@each $key, $value in $color-array {
+  .bg-#{$key} {
+    background: $value;
+  }
+}
+$zhijie-array:(
+  saber: url("~@/assets/image/icon/class/class_1_1.png")
+  archer: url("~@/assets/image/icon/class/class_2_1.png")
+);
+
+@each $key, $value in $zhijie-array {
+  .img_#{$key} {
+    background-image: $value;
+    background-size: cover;
+  }
+}
